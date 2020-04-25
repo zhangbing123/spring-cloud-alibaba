@@ -15,7 +15,7 @@ public class UserController {
     @GetMapping("/hello")
     public String hello(@RequestParam("name") String name){
         String s = "hello:" + name;
-        System.out.printf(s);
+        System.out.println(s);
         return s;
     }
 }

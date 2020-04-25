@@ -26,7 +26,6 @@ public class RegisterController {
     private DiscoveryClient discoveryClient;
 
     @GetMapping("/getServerList")
-    
     public List<ServiceInstance> submitOrder(@RequestParam("serverName") String serverName) {
         return discoveryClient.getInstances(serverName);
     }
